@@ -1,9 +1,18 @@
 import React from 'react';
 
-const DisplayQuote = ({ quote }) => {
+function strip(html){
+   var tmp = document.createElement("DIV");
+   tmp.innerHTML = html;
+   return tmp.textContent || tmp.innerText || "";
+}
+
+const DisplayQuote = ({ quote, author }) => {
   return (
     <div>
-      {quote}
+      {strip(quote)}
+      <p>
+        {strip(author)}
+      </p>
     </div>
   );
 }
