@@ -11,11 +11,15 @@ class App extends React.Component {
     this.setState({author: response.data[0].title});
   }
 
+  componentDidMount() {
+    this.onSearchSubmit();
+  }
+
   render() {
     return (
-      <div>
-        <button onClick={this.onSearchSubmit}>Click</button>
+      <div className="ui container">
         <DisplayQuote quote={this.state.quote} author={this.state.author} />
+        <button className="ui secondary button" onClick={this.onSearchSubmit}>Click</button>
       </div>
     );
   }
