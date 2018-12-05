@@ -24,9 +24,8 @@ class App extends React.Component {
           <div className="quote-container">
             <div className="inner-contain">
               <div className="hero">
-                <button className="ui secondary button" onClick={this.onSearchSubmit}>Click for a Quote</button>
+                <button className="big ui positive button" onClick={this.onSearchSubmit}>Get an Inspirational Quote</button>
                 <DisplayQuote quote={this.state.quote} author={this.state.author} />
-
               </div>
             </div>
           </div>

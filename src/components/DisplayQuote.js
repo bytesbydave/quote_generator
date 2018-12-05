@@ -7,8 +7,8 @@ function strip(html){
    return tmp.textContent || tmp.innerText || "";
 }
 
-function twitter(tweet) {
-  return `https://twitter.com/intent/tweet?text=${tweet}`
+function twitter(tweet, author) {
+  return `https://twitter.com/intent/tweet?text=${tweet} ~${author}`
 }
 
 const DisplayQuote = ({ quote, author }) => {
@@ -19,14 +19,19 @@ const DisplayQuote = ({ quote, author }) => {
       </div>
       <div className="hero-image">
         <div className="image-contain">
-          <img alt="person-image" src={faker.image.avatar()} />
+          <img alt="person" src={faker.image.avatar()} />
         </div>
       </div>
       <div className="stack-1">
-        <p>{strip(author)}</p>
-        <div className="twitter-icon">
-          <a class="twitter-share-button" href={twitter(strip(quote))}>Tweet</a>
-        </div>
+        <p>~ {strip(author)}</p>
+        <a className="twitter-share-button" href={twitter(strip(quote), strip(author))}>
+          <button className="ui twitter button">
+            <i className="twitter icon"></i>
+            Tweet
+          </button>
+        </a>
+        
+          
       </div>
     </div>
   );
