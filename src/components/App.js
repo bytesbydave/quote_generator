@@ -1,6 +1,8 @@
 import React from 'react';
 import quotesondesign from '../api/quotesondesign';
 import DisplayQuote from './DisplayQuote';
+import '../css/App.css';
+
 
 class App extends React.Component {
   state = { quote: '', author: '' };
@@ -17,9 +19,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="ui container">
-        <DisplayQuote quote={this.state.quote} author={this.state.author} />
-        <button className="ui secondary button" onClick={this.onSearchSubmit}>Click</button>
+      <div className="blue-back">
+        <div className="ui container display-top">
+          <div className="quote-container">
+            <div className="inner-contain">
+              <div className="hero">
+                <button className="ui secondary button" onClick={this.onSearchSubmit}>Click for a Quote</button>
+                <DisplayQuote quote={this.state.quote} author={this.state.author} />
+
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     );
   }

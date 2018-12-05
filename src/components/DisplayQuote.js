@@ -1,4 +1,5 @@
 import React from 'react';
+import faker from 'faker';
 
 function strip(html){
    var tmp = document.createElement("DIV");
@@ -12,17 +13,22 @@ function twitter(tweet) {
 
 const DisplayQuote = ({ quote, author }) => {
   return (
-    <div>
-      {strip(quote)}
-      <a class="twitter-share-button" href={twitter(strip(quote))}>
-    Tweet
-      </a>
-      <p>
-        {strip(author)}
-      </p>
+    <div className="hero-quote">
+      <div className="stack-1">
+        <h1>{strip(quote)}</h1>
+      </div>
+      <div className="hero-image">
+        <div className="image-contain">
+          <img alt="person-image" src={faker.image.avatar()} />
+        </div>
+      </div>
+      <div className="stack-1">
+        <p>{strip(author)}</p>
+        <div className="twitter-icon">
+          <a class="twitter-share-button" href={twitter(strip(quote))}>Tweet</a>
+        </div>
+      </div>
     </div>
-      
-        
   );
 }
 
