@@ -1,0 +1,13 @@
+{
+  "main.css": "/quote_generator/static/css/main.66bfc20e.chunk.css",
+  "main.js": "/quote_generator/static/js/main.7796735d.chunk.js",
+  "main.js.map": "/quote_generator/static/js/main.7796735d.chunk.js.map",
+  "static/js/1.56c5555c.chunk.js": "/quote_generator/static/js/1.56c5555c.chunk.js",
+  "static/js/1.56c5555c.chunk.js.map": "/quote_generator/static/js/1.56c5555c.chunk.js.map",
+  "runtime~main.js": "/quote_generator/static/js/runtime~main.bb26fb75.js",
+  "runtime~main.js.map": "/quote_generator/static/js/runtime~main.bb26fb75.js.map",
+  "static/css/main.66bfc20e.chunk.css.map": "/quote_generator/static/css/main.66bfc20e.chunk.css.map",
+  "index.html": "/quote_generator/index.html",
+  "precache-manifest.cabf847e009575553ae371cd8e24c030.js": "/quote_generator/precache-manifest.cabf847e009575553ae371cd8e24c030.js",
+  "service-worker.js": "/quote_generator/service-worker.js"
+}
