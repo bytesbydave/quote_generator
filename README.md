@@ -2,7 +2,7 @@
 
 This app generates a random inspirational quote using the Quotes on Design API. This front-end project uses React and was designed using Semantic UI and custom CSS.
 
-View the live site [here](https://dave-lin-react-quote-generator.herokuapp.com/)
+View the live site [here](https://dvdlin214.github.io/quote_generator/)
 
 ## Getting Started
 
